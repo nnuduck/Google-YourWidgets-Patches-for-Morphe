@@ -1,0 +1,10 @@
+[versions]
+morphe-patcher = "2.3.0"
+morphe-patches-library = "2.1.1"
+smali = "ac700e1942"
+# Annotations / Gson are pulled transitively by morphe-patcher / morphe-patches-library.
+
+[libraries]
+morphe-patcher = { group = "app.morphe", name = "morphe-patcher", version.ref = "morphe-patcher" }
+morphe-patches-library = { group = "app.morphe", name = "morphe-patches-library", version.ref = "morphe-patches-library" }
+smali = { group = "com.github.MorpheApp.smali", name = "smali", version.ref = "smali" }

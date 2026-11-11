@@ -1,0 +1,47 @@
+# Gradle / Kotlin / IDE
+.gradle/
+.kotlin/
+build/
+**/build/
+out/
+.idea/
+*.iml
+*.ipr
+*.iws
+local.properties
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Android binaries, signatures & keystores
+*.apk
+*.apks
+*.aab
+*.xapk
+*.apkm
+*.dex
+*.idsig
+*.keystore
+*.jks
+*.bks
+*.p12
+*.pfx
+*.pem
+*.key
+*.pk8
+
+# Logs, captures, local work directories
+*.log
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+work/
+decompiled/
+decoded/
+logs/
+screenshots/
+tmp/

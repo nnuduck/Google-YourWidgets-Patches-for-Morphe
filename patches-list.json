@@ -1,0 +1,137 @@
+{
+  "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
+  "version": "1.0.0",
+  "patches": [
+    {
+      "name": "Bypass device compatibility check",
+      "description": "Bypasses the runtime and manifest checks for Gemini Intelligence Experience, unhides the widget from the system picker, and optionally adds a launcher shortcut.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.google.android.apps.yourwidget",
+          "name": "Create My Widget",
+          "description": "Create My Widget (Google AI Widgets) bundle tested with 1.78.1014747048.5-release (285899).",
+          "apkFileType": "APKS",
+          "appIconColor": null,
+          "signatures": [
+            "5aaf36a918288f7ac42857fb9a87a7fd3646a7ddcfbd29cd7413b97fa19922c3"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "1.78.1014747048.5-release",
+              "versionCodes": {
+                "ARM64_V8A": 285899,
+                "ARMEABI_V7A": 285899,
+                "X86_64": 285899,
+                "X86": 285899
+              },
+              "isExperimental": false,
+              "minSdk": 37,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "addLauncherShortcut",
+          "title": "Add launcher shortcut",
+          "description": "Adds MAIN/LAUNCHER intent-filter to LlmWidgetConfigActivity so the configurator can also be opened from the app drawer.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Redirect services to GmsCore",
+      "description": "Redirects Google Play Services, Google account, GServices, Phenotype, and MobStore calls to microG/GmsCore and spoofs the original signing SHA-1 for non-root installations.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.google.android.apps.yourwidget",
+          "name": "Create My Widget",
+          "description": "Create My Widget (Google AI Widgets) bundle tested with 1.78.1014747048.5-release (285899).",
+          "apkFileType": "APKS",
+          "appIconColor": null,
+          "signatures": [
+            "5aaf36a918288f7ac42857fb9a87a7fd3646a7ddcfbd29cd7413b97fa19922c3"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "1.78.1014747048.5-release",
+              "versionCodes": {
+                "ARM64_V8A": 285899,
+                "ARMEABI_V7A": 285899,
+                "X86_64": 285899,
+                "X86": 285899
+              },
+              "isExperimental": false,
+              "minSdk": 37,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "gmsCoreVendorGroupId",
+          "title": "GmsCore vendor group ID",
+          "description": "Package prefix of your microG/GmsCore installation (e.g., app.revanced, com.mgoogle, org.microg).",
+          "required": true,
+          "type": "kotlin.String",
+          "default": "app.revanced",
+          "values": null
+        },
+        {
+          "key": "spoofXAndroidCert",
+          "title": "Spoof X-Android-Cert header",
+          "description": "Returns the original Play Store certificate SHA-1 when computing X-Android-Cert headers.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Skip prompt templates loading error",
+      "description": "Prevents SuggestedWidgetPromptsDataServiceImpl from failing with PERMISSION_DENIED so bundled offline prompt suggestions still load in the configurator carousel.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.google.android.apps.yourwidget",
+          "name": "Create My Widget",
+          "description": "Create My Widget (Google AI Widgets) bundle tested with 1.78.1014747048.5-release (285899).",
+          "apkFileType": "APKS",
+          "appIconColor": null,
+          "signatures": [
+            "5aaf36a918288f7ac42857fb9a87a7fd3646a7ddcfbd29cd7413b97fa19922c3"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "1.78.1014747048.5-release",
+              "versionCodes": {
+                "ARM64_V8A": 285899,
+                "ARMEABI_V7A": 285899,
+                "X86_64": 285899,
+                "X86": 285899
+              },
+              "isExperimental": false,
+              "minSdk": 37,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    }
+  ]
+}
